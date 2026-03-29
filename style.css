@@ -1,0 +1,307 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+    --grey-text:              #c7c7c7;
+    --border-color:           #2e2e2e;
+    --active-button-bg:       #ffffff;
+    --active-button-text:     #000000;
+    --button-border:          #fff;
+    --button-bg:              transparent;
+    --input-bg:               #141414;
+    --black-bg-transparent:   #0000005e;
+}
+
+*, *::before, *::after {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(360deg, #000000 0%, #292929 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--black-bg-transparent);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-content-1 img {
+    display: block;
+    transition: scale 0.2s;
+}
+
+.navbar-content-1 img:hover {
+    scale: 1.1;
+}
+
+.navbar-content-2 ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navbar-content-2 li {
+    padding: 10px 25px;
+    background-color: #292929;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.navbar-content-2 li:hover {
+    background-color: #474747;
+    border-color: #686868;
+}
+
+.navbar-content-2 a {
+    text-decoration: none;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.customize-menu {
+    width: 450px;
+    height: 100%;
+    padding: 40px;
+    background: var(--black-bg-transparent);
+    border-right: 1px solid var(--border-color);
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.customize-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customize-content-all-header span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.customize-content-all-explain span {
+    font-size: 12px;
+    color: var(--grey-text);
+}
+
+.customize-content-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.customize-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customize-content-1 {
+    padding: 10px;
+    background-color: var(--black-bg-transparent);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.customize-content-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: var(--black-bg-transparent);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.customize-content-2 button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--button-border);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.customize-content-2 button:hover,
+.customize-content-2 button.active {
+    background-color: var(--active-button-bg);
+    color: var(--active-button-text);
+}
+
+.customize-input-div {
+    display: flex;
+    gap: 10px;
+}
+
+.customize-input-div input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.customize-input-div input:focus {
+    border-color: #555;
+}
+
+.customize-content-button {
+    display: flex;
+    gap: 10px;
+}
+
+.preview-menu {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mc-preview {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(1, 1, 1, 0.5);
+    border: 2px solid #1b0035;
+}
+
+.code-preview textarea {
+    width: 100%;
+    height: 30vh;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--black-bg-transparent);
+    resize: vertical;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.2s;
+}
+
+.code-preview textarea:focus {
+    border-color: #555;
+}
+
+.button-preview {
+    display: flex;
+    gap: 10px;
+}
+
+.button-preview button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--button-border);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button-preview button:hover {
+    background-color: var(--active-button-bg);
+    color: var(--active-button-text);
+}
+
+@media (max-width: 900px) {
+    .customize-menu {
+        width: 280px;
+        padding: 20px;
+    }
+ 
+    .preview-menu {
+        padding: 20px;
+    }
+ 
+    .customize-content-header {
+        font-size: 16px;
+    }
+ 
+    .customize-content-all-header span {
+        font-size: 20px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+ 
+    .navbar {
+        padding: 12px 16px;
+        gap: 10px;
+    }
+ 
+    .navbar-content-1 img {
+        width: 120px;
+    }
+ 
+    .navbar-content-2 li {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+ 
+    .container {
+        flex-direction: column;
+        overflow: visible;
+    }
+ 
+    .customize-menu {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 16px;
+        overflow-y: visible;
+    }
+ 
+    .customize-content-header {
+        font-size: 15px;
+    }
+ 
+    .customize-content-all-header span {
+        font-size: 18px;
+    }
+
+    .preview-menu {
+        padding: 16px;
+        overflow-y: visible;
+        gap: 12px;
+    }
+ 
+    .mc-preview {
+        height: auto;
+        min-height: 120px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+ 
+    .code-preview textarea {
+        height: 200px;
+        padding: 12px;
+    }
+}
