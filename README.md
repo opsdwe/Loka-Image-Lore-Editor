@@ -1,5 +1,3 @@
-Best Loka Image Lore Editor (Open Source)
-
 > [!NOTE]
 > ## Best Loka Image Lore Editor v0.2 (Open Source)
 > 
