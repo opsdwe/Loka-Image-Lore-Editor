@@ -3,5 +3,5 @@
 > [!NOTE]
 > ## Best Loka Image Lore Editor v0.2 (Open Source)
 > 
-> - You can use the project in any way you like, as long as you provide credit.
-> - You can use the tool by launching `index.html` after downloading the project.
+> - Feel free to use this project however you like as long as you provide credit
+> - To get started simply download the project and launch `index.html`
