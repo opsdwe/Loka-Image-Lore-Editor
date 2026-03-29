@@ -220,6 +220,6 @@ function copyToClipboard() {
     if (!text) { reset('Copied!'); return; }
 
     navigator.clipboard.writeText(text)
-        .then(() => reset('Kopyalandı!'))
-        .catch(() => reset('Hata!'));
+        .then(() => reset('Copied!'))
+        .catch(() => reset('Error!'));
 }
