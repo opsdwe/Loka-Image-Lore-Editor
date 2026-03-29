@@ -223,3 +223,5 @@ function copyToClipboard() {
         .then(() => reset('Copied!'))
         .catch(() => reset('Error!'));
 }
+
+console.log("Developed by Opsdwe")
