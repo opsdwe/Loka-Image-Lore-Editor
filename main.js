@@ -225,3 +225,4 @@ function copyToClipboard() {
 }
 
 console.log("Developed by Opsdwe")
+console.log("https://github.com/opsdwe/Loka-Image-Lore-Editor")
