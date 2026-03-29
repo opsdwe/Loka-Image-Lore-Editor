@@ -1,3 +1,7 @@
+<p align='center'>
+  ![hippo](https://i.imgur.com/aZgrhol.png)
+</p>
+
 > [!NOTE]
 > ## Best Loka Image Lore Editor v0.2 (Open Source)
 > 
