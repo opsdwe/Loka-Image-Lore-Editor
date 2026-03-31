@@ -111,7 +111,6 @@ function getClosestMinecraftColor(r, g, b) {
 }
 
 function processImage(img) {
-    // Clamp dimensions
     let width  = Math.min(Math.max(parseInt(widthInput.value)  || 30, 1), 30);
     let height = Math.min(Math.max(parseInt(heightInput.value) || 15, 1), 15);
     widthInput.value  = width;
