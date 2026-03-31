@@ -8,14 +8,12 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="navbar-content-1">
             <a href="index.html">
                 <img src="./assets/logo.png" alt="Loka Logo" width="200">
             </a>
         </div>
-
         <div class="navbar-content-2">
             <ul>
                 <li><a href="index.html">Image Lore</a></li>
@@ -23,13 +21,9 @@
             </ul>
         </div>
     </nav>
-
     <div class="container">
-
         <aside class="customize-menu">
             <div class="customize-gap">
-
-                <!-- Header -->
                 <div class="customize-content-1">
                     <div class="customize-content-all-header">
                         <span>Customize Menu</span>
@@ -38,15 +32,12 @@
                         <span>Loka Image Lore Generator</span>
                     </div>
                 </div>
-
                 <div class="customize-settings">
-
                     <div class="customize-content-2">
                         <div class="customize-content-header">Photo:</div>
                         <input type="file" id="fileInput" accept="image/*" style="display: none;">
                         <button id="uploadBtn">Add photo</button>
                     </div>
-
                     <div class="customize-content-2">
                         <div class="customize-content-header">ASCII Character:</div>
                         <div class="customize-input-div">
@@ -59,7 +50,6 @@
                             >
                         </div>
                     </div>
-
                     <div class="customize-content-2">
                         <div class="customize-content-header">Size:</div>
                         <div class="customize-input-div">
@@ -67,7 +57,6 @@
                             <input type="number" id="heightInput" placeholder="Height" min="1" max="15"  value="15">
                         </div>
                     </div>
-
                     <div class="customize-content-2">
                         <div class="customize-content-header">Color Mode:</div>
                         <div class="customize-content-button">
@@ -75,33 +64,25 @@
                             <button id="normalModeBtn">Normal</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </aside>
-
         <main class="preview-menu">
-
             <div class="mc-preview">
                 <div class="preview-header" id="previewHeader">Header</div>
                 <div id="previewDivider">---</div>
                 <div class="preview-content" id="previewContent">Content</div>
             </div>
-
             <div class="code-preview">
                 <textarea id="codeOutput" placeholder="Lore code area..."></textarea>
             </div>
-
             <div class="button-preview">
                 <button id="updatePreviewBtn">Update</button>
                 <button id="copyBtn">Copy</button>
             </div>
-
         </main>
     </div>
-
     <canvas id="canvas" style="display: none;"></canvas>
-
     <script src="main.js"></script>
 </body>
 </html>
